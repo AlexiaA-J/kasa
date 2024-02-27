@@ -1,0 +1,27 @@
+.headerNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    text-transform: uppercase;
+
+    &__link {
+        font-size: 12px;
+        font-weight: 500;
+        color: $quaternary-color;
+        text-decoration: none;
+        padding-left: 1.63rem;
+
+        @media (min-width: $breakpoint) {
+            font-size: 24px;
+            text-transform: capitalize;
+            padding-left: 3.6rem;
+        }
+
+        &:hover {
+            text-decoration: underline;
+            text-decoration-thickness: 1.5px;
+            text-underline-offset: 2px;
+        }
+    }
+}

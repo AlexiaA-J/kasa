@@ -2,4 +2,55 @@
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5%;
+}
+@media (min-width: 768px) {
+  .headerWrapper {
+    margin: 45px 95px 0px 95px;
+  }
+}
+.headerWrapper__fig {
+  margin: 0;
+  width: 9rem;
+}
+@media (min-width: 768px) {
+  .headerWrapper__fig {
+    width: 13rem;
+  }
+}
+.headerWrapper__fig img {
+  width: 100%;
+}
+
+.headerNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  text-transform: uppercase;
+}
+.headerNav__link {
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  padding-left: 1.63rem;
+}
+@media (min-width: 768px) {
+  .headerNav__link {
+    font-size: 24px;
+    text-transform: capitalize;
+    padding-left: 3.6rem;
+  }
+}
+.headerNav__link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,23 @@
+.headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5%;
+
+        @media (min-width: $breakpoint) {
+            margin: 45px 95px 0px 95px;
+        }
+
+    &__fig {
+        margin: 0;
+        width: 9rem;
+
+        @media (min-width: $breakpoint) {
+            width: 13rem;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
