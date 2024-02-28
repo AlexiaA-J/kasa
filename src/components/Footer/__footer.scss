@@ -1,0 +1,39 @@
+.footerWrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 66px 120px 58px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $quaternary-color;
+
+    @media (min-width: $breakpoint) {
+        padding-bottom: 29px;
+    }
+
+    &__fig {
+        width: 7.62rem;
+        margin: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__copyright {
+        color: $tertiary-color;
+        font-size: 12px;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+
+        @media (min-width: $breakpoint) {
+            font-size: 24px;
+            padding: 28px 10px 0 10px;
+        }
+    }
+}
