@@ -1,0 +1,44 @@
+.errorWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 113px;
+    padding: 94px 0 113px 0;
+
+    @media (min-width: $breakpoint) {
+        gap: 139px;
+        padding: 120px 0 139px 0;
+    }
+
+    &__404 {
+        font-size: 96px;
+        font-weight: 700;
+        color: $primary-color;
+
+        @media (min-width: $breakpoint) {
+            font-size: 288px;
+        }
+    }
+
+    &__text {
+        color: $primary-color;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        word-break: break-word;
+
+        @media (min-width: $breakpoint) {
+            font-size: 36px;
+        }
+    }
+
+    &__link {
+        color: $quaternary_color;
+        font-weight: 500;
+        font-size: 14px;
+
+        @media (min-width: $breakpoint) {
+            font-size: 18px;
+        }
+    }
+}

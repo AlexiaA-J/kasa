@@ -6,7 +6,7 @@ function Header() {
     return (
         <header className='headerWrapper'>
             <figure className='headerWrapper__fig'>
-            <Link to="/">
+                <Link to="/">
                     <img src={Logo} alt='Logo de Kasa' />
                 </Link>
             </figure>
