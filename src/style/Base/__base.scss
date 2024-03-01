@@ -8,7 +8,9 @@
 
 .contentWrapper {
     display: flex;
-    margin: 0%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 22px;
 
     @media (min-width: 769px) {
         margin: 0 100px;

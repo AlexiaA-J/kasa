@@ -1,0 +1,61 @@
+.bannerWrapper {
+    position: relative;
+    width: 100%;
+    min-width: 335px;
+    height: 111px;
+    margin:  0 22px 22px 22px;
+    border-radius: $small-br;
+
+    @media (min-width: $breakpoint) {
+        margin: 50px 22px 22px 22px;
+        height: 223px;
+    }
+
+    &__title {
+        position: absolute;
+        left: 16px;
+        top: 25px;
+        width: 225px;
+        font-size: 24px;
+        color: $tertiary-color;
+
+        @media (min-width: $breakpoint) {
+            width: 100%;
+            font-size: 24x;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            @media (min-width: 1280px) {
+                font-size: 48px;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          }
+        }
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: $small-br;
+      }
+}
+
+.home-banner {
+    background-image: url('../assets/bg_banner_home.png');
+}
+
+.about-banner {
+    background-image: url('../assets/bg_banner_about.png');
+}
+
+.home-banner, .about-banner {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+}
