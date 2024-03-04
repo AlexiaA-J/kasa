@@ -23,7 +23,7 @@ function Collapse({title, text}) {
                 <h2>
                     {title}
                 </h2>
-                <img className={toggle && 'active'} src={Arrow} alt='Collapse arrow' />
+                <img className={toggle ? 'active' : ''} src={Arrow} alt='Collapse arrow' />
             </button>
             <div className={toggle ? 'collapseWrapper__toggle animated' : 'collapseWrapper__toggle'}
             style={{height: toggle ? `${heightEl}` : '0px'}}
