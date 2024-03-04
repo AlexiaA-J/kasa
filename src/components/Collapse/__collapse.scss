@@ -1,0 +1,79 @@
+// BASE STYLE FOR USE IN ABOUT PAGE. For style in FicheLogement, see after.
+
+.collapseWrapper {
+    margin-bottom: 20px;
+    width: 100%;
+    background: $secondary-color;
+    border-radius: $extra-small-br;
+
+    @media (min-width: $breakpoint) {
+        margin-bottom: 30px;
+        max-width: 1023px;
+    }
+
+    &__visible {
+        background: $primary-color;
+        width: 100%;
+        height: 30px;
+        color: $tertiary-color;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 7px 15px;
+        border-radius: $extra-small-br;
+        border: none;
+
+        @media (min-width: $breakpoint) {
+            height: 52px;
+        }
+    
+        h2 {
+            padding: 15px 0;
+            font-size: 13px;
+            font-weight: 700;
+
+            @media (min-width: $breakpoint) {
+                font-size: 24px;
+            }
+        }
+
+        img {
+            width: 20px;
+            transform: rotate(-180deg);
+            transition: transform 0.5s ease-in-out;
+
+            @media (min-width: $breakpoint) {
+                width: 32px;
+            }
+        }
+
+        .active {
+            transform: rotate(0deg);
+        }
+    }
+
+    &__toggle {
+        height: 0px;
+        font-size: 12px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out, height 0.3s 0.3s ease-in-out;
+        color: $quaternary-color;
+
+        @media (min-width: $breakpoint) {
+            font-size: 18px;
+        }
+
+        p {
+            margin: 0;
+            padding: 22px 20px;
+            pointer-events: none;
+            line-height: 1.3;
+        }
+    }
+
+    .animated {
+        opacity: 1;
+        transition: height 0.3s ease-in-out, opacity 0.3s 0.3s ease-in-out;
+    }
+}

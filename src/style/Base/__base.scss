@@ -6,6 +6,11 @@
     margin: 0;
 }
 
+body {
+    max-width: 1440px;
+    margin: auto;
+}
+
 .contentWrapper {
     display: flex;
     flex-direction: column;
