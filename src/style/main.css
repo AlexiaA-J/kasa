@@ -50,6 +50,30 @@ body {
   }
 }
 
+.collapsesWrapper {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .collapsesWrapper {
+    display: flex;
+    gap: 6%;
+  }
+}
+.collapsesWrapper ul {
+  padding-left: 0;
+}
+.collapsesWrapper li {
+  list-style: none;
+}
+.collapsesWrapper .collapses {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .collapsesWrapper .collapseDescription {
+    margin-bottom: 30px;
+  }
+}
+
 .errorWrapper {
   display: flex;
   flex-direction: column;
