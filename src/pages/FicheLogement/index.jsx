@@ -1,6 +1,7 @@
 import logementsData from '../../datas/logements.json'
 import Collapse from '../../components/Collapse'
 import Tag from '../../components/Tag'
+import Author from '../../components/Author'
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 
@@ -19,26 +20,31 @@ function FicheLogement() {
     return (
         logementData && <div className="contentWrapper">
             {/* SLIDESHOW ?? */}
-            <div className='titlesTagsWrapper'>
-                <div className='titlesWrapper'>
-                    <h1>
-                        {logementData.title}
-                    </h1>
-                    <h2>
-                        {logementData.location}
-                    </h2>
+            <div className='authorInfoWrapper'>
+                <div className='titlesTagsWrapper'>
+                    <div className='titlesWrapper'>
+                        <h1>
+                            {logementData.title}
+                        </h1>
+                        <h2>
+                            {logementData.location}
+                        </h2>
+                    </div>
+                    <div className='tagsWrapper'>
+                        {logementData.tags.map((tag)=> (
+                            <Tag
+                            tag={tag}
+                            />
+                        ))}
+                    </div>
                 </div>
-                <div className='tagsWrapper'>
-                    {logementData.tags.map((tag)=> (
-                        <Tag
-                           tag={tag}
-                        />
-                    ))}
+                <div className='ratingAuthorWrapper'>
+                    {/* RATING COMPONENT ?? */}
+                    <Author
+                        name={logementData.host.name}
+                        picture={logementData.host.picture}
+                    />
                 </div>
-            </div>
-            <div>
-                {/* RATING COMPONENT ?? */}
-                {/* AUTEUR COMPONENT ?? */}
             </div>
             <div className='collapsesWrapper'>
                 <div className='collapses'>
