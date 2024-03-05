@@ -18,13 +18,15 @@ function FicheLogement() {
     return (
         logementData && <div className="contentWrapper">
             {/* SLIDESHOW ?? */}
-            <div>
-                <h1>
-
-                </h1>
-                <h2>
-
-                </h2>
+            <div className='titlesTagsWrapper'>
+                <div className='titlesWrapper'>
+                    <h1>
+                        {logementData.title}
+                    </h1>
+                    <h2>
+                        {logementData.location}
+                    </h2>
+                </div>
                 <div>
                     {/* TAG COMPONENT ?? */}
                 </div>
@@ -34,7 +36,7 @@ function FicheLogement() {
                 {/* AUTEUR COMPONENT ?? */}
             </div>
             <div className='collapsesWrapper'>
-                <div className='collapses collapseDescription'>
+                <div className='collapses'>
                     <Collapse 
                     title='Description'
                     text={logementData.description}
