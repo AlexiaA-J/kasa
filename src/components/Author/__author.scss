@@ -1,0 +1,33 @@
+.authorWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @media (min-width: $breakpoint) {
+        margin-bottom: 21px;
+    }
+
+    &__title {
+        color: $primary-color;
+        font-size: 12px;
+        font-weight: 500;
+        width: 63px;
+        text-align: right;
+
+        @media (min-width: $breakpoint) {
+            font-size: 18px;
+        }
+    }
+
+    &__picture {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        margin-left: 10px;
+
+        @media (min-width: $breakpoint) {
+            width: 64px;
+            height: 64px;
+        }
+    }
+}

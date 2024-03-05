@@ -50,36 +50,65 @@ body {
   }
 }
 
-.titlesTagsWrapper {
+.authorInfoWrapper {
+  width: 100%;
+  margin-top: 15px;
+}
+@media (min-width: 768px) {
+  .authorInfoWrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+  }
+}
+.authorInfoWrapper .titlesTagsWrapper {
   display: flex;
   flex-direction: column;
 }
-.titlesTagsWrapper .titlesWrapper h1 {
+@media (min-width: 768px) {
+  .authorInfoWrapper .titlesTagsWrapper {
+    width: 80%;
+  }
+}
+.authorInfoWrapper .titlesTagsWrapper .titlesWrapper h1 {
   color: #ff6060;
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 5px;
 }
 @media (min-width: 768px) {
-  .titlesTagsWrapper .titlesWrapper h1 {
+  .authorInfoWrapper .titlesTagsWrapper .titlesWrapper h1 {
     font-size: 36px;
   }
 }
-.titlesTagsWrapper .titlesWrapper h2 {
+.authorInfoWrapper .titlesTagsWrapper .titlesWrapper h2 {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 10px;
 }
 @media (min-width: 768px) {
-  .titlesTagsWrapper .titlesWrapper h2 {
+  .authorInfoWrapper .titlesTagsWrapper .titlesWrapper h2 {
     font-size: 18px;
   }
 }
-.titlesTagsWrapper .tagsWrapper {
+.authorInfoWrapper .titlesTagsWrapper .tagsWrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 16px;
+}
+.authorInfoWrapper .ratingAuthorWrapper {
+  margin-bottom: 13px;
+}
+@media (min-width: 768px) {
+  .authorInfoWrapper .ratingAuthorWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 20%;
+    margin-bottom: 0;
+    gap: 3px;
+  }
 }
 
 .collapsesWrapper {
@@ -196,6 +225,41 @@ body {
   text-decoration: underline;
   text-decoration-thickness: 1.5px;
   text-underline-offset: 2px;
+}
+
+.authorWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media (min-width: 768px) {
+  .authorWrapper {
+    margin-bottom: 21px;
+  }
+}
+.authorWrapper__title {
+  color: #ff6060;
+  font-size: 12px;
+  font-weight: 500;
+  width: 63px;
+  text-align: right;
+}
+@media (min-width: 768px) {
+  .authorWrapper__title {
+    font-size: 18px;
+  }
+}
+.authorWrapper__picture {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+@media (min-width: 768px) {
+  .authorWrapper__picture {
+    width: 64px;
+    height: 64px;
+  }
 }
 
 .bannerWrapper {
