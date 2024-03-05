@@ -1,3 +1,35 @@
+.titlesTagsWrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $breakpoint) {
+        flex-direction: row;
+    }
+
+    .titlesWrapper {
+        h1 {
+            color: $primary-color;
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 5px;
+
+            @media (min-width: $breakpoint) {
+                font-size: 36px;
+            }
+        }
+
+        h2 {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 10px;
+
+            @media (min-width: $breakpoint) {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
 .collapsesWrapper {
     width: 100%;
 
@@ -17,10 +49,5 @@
     .collapses {
         width: 100%;
     }
-
-    .collapseDescription {
-        @media (min-width: $breakpoint) {
-            margin-bottom: 30px;
-        }
-    }
+    
 }
