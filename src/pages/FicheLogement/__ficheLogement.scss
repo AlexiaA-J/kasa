@@ -2,10 +2,6 @@
     display: flex;
     flex-direction: column;
 
-    @media (min-width: $breakpoint) {
-        flex-direction: row;
-    }
-
     .titlesWrapper {
         h1 {
             color: $primary-color;
@@ -27,6 +23,13 @@
                 font-size: 18px;
             }
         }
+    }
+
+    .tagsWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 16px;   
     }
 }
 

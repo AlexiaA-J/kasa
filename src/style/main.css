@@ -54,11 +54,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 768px) {
-  .titlesTagsWrapper {
-    flex-direction: row;
-  }
-}
 .titlesTagsWrapper .titlesWrapper h1 {
   color: #ff6060;
   font-size: 18px;
@@ -79,6 +74,12 @@ body {
   .titlesTagsWrapper .titlesWrapper h2 {
     font-size: 18px;
   }
+}
+.titlesTagsWrapper .tagsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
 }
 
 .collapsesWrapper {
@@ -367,6 +368,24 @@ body {
 .collapseWrapper .animated {
   opacity: 1;
   transition: height 0.3s ease-in-out, opacity 0.3s 0.3s ease-in-out;
+}
+
+.tagWrapper {
+  font-size: 10px;
+  font-weight: 500;
+  background: #ff6060;
+  color: #FFFFFF;
+  margin-top: 2%;
+  height: 18px;
+  border-radius: 5px;
+  padding: 3px 10px 0 10px;
+}
+@media (min-width: 768px) {
+  .tagWrapper {
+    height: 25px;
+    font-size: 14px;
+    font-weight: 700;
+  }
 }
 
 .footerWrapper {

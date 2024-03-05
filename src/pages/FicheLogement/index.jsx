@@ -1,5 +1,6 @@
 import logementsData from '../../datas/logements.json'
 import Collapse from '../../components/Collapse'
+import Tag from '../../components/Tag'
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 
@@ -27,8 +28,12 @@ function FicheLogement() {
                         {logementData.location}
                     </h2>
                 </div>
-                <div>
-                    {/* TAG COMPONENT ?? */}
+                <div className='tagsWrapper'>
+                    {logementData.tags.map((tag)=> (
+                        <Tag
+                           tag={tag}
+                        />
+                    ))}
                 </div>
             </div>
             <div>
