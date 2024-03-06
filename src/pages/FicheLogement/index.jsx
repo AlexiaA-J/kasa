@@ -1,6 +1,7 @@
 import logementsData from '../../datas/logements.json'
 import Collapse from '../../components/Collapse'
 import Tag from '../../components/Tag'
+import Rating from '../../components/Rating'
 import Author from '../../components/Author'
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
@@ -39,7 +40,9 @@ function FicheLogement() {
                     </div>
                 </div>
                 <div className='ratingAuthorWrapper'>
-                    {/* RATING COMPONENT ?? */}
+                    <Rating 
+                    rating={logementData.rating}
+                    />
                     <Author
                         name={logementData.host.name}
                         picture={logementData.host.picture}

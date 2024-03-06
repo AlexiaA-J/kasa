@@ -99,15 +99,19 @@ body {
 }
 .authorInfoWrapper .ratingAuthorWrapper {
   margin-bottom: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 @media (min-width: 768px) {
   .authorInfoWrapper .ratingAuthorWrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: flex-end;
+    justify-content: center;
     width: 20%;
-    margin-bottom: 0;
-    gap: 3px;
+    margin-bottom: 5px;
+    gap: 20px;
   }
 }
 
@@ -232,16 +236,12 @@ body {
   align-items: center;
   gap: 10px;
 }
-@media (min-width: 768px) {
-  .authorWrapper {
-    margin-bottom: 21px;
-  }
-}
 .authorWrapper__title {
   color: #ff6060;
   font-size: 12px;
   font-weight: 500;
-  width: 63px;
+  width: auto;
+  max-width: 90px;
   text-align: right;
 }
 @media (min-width: 768px) {
@@ -432,6 +432,27 @@ body {
 .collapseWrapper .animated {
   opacity: 1;
   transition: height 0.3s ease-in-out, opacity 0.3s 0.3s ease-in-out;
+}
+
+.ratingWrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+@media (min-width: 768px) {
+  .ratingWrapper {
+    gap: 10px;
+  }
+}
+.ratingWrapper .emptyStar, .ratingWrapper .fullStar {
+  width: 18px;
+  height: 18px;
+}
+@media (min-width: 768px) {
+  .ratingWrapper .emptyStar, .ratingWrapper .fullStar {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 .tagWrapper {

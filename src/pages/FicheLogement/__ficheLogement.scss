@@ -50,14 +50,18 @@
 
     .ratingAuthorWrapper {
         margin-bottom: 13px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
 
         @media (min-width: $breakpoint) {
             display: flex;
-            flex-direction: column;
+            flex-direction: column-reverse;
             align-items: flex-end;
+            justify-content: center;
             width: 20%;
-            margin-bottom: 0;
-            gap: 3px;
+            margin-bottom: 5px;
+            gap: 20px;
         }
     }
 }
