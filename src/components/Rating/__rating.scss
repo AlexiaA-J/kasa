@@ -1,0 +1,20 @@
+.ratingWrapper {
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    @media (min-width: $breakpoint) {
+        gap: 10px
+    }
+
+    .emptyStar, .fullStar {
+        width: 18px;
+        height: 18px;
+
+        @media (min-width: $breakpoint) {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
