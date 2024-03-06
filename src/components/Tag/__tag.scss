@@ -1,0 +1,17 @@
+
+.tagWrapper {
+    font-size: 10px;
+    font-weight: 500;
+    background: $primary-color;
+    color: $tertiary-color;
+    margin-top: 2%;
+    height: 18px;
+    border-radius: $extra-small-br;
+    padding: 3px 10px 0 10px;
+
+    @media (min-width: $breakpoint) {
+        height: 25px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}

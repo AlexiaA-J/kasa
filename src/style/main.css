@@ -50,6 +50,90 @@ body {
   }
 }
 
+.authorInfoWrapper {
+  width: 100%;
+  margin-top: 15px;
+}
+@media (min-width: 768px) {
+  .authorInfoWrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+  }
+}
+.authorInfoWrapper .titlesTagsWrapper {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .authorInfoWrapper .titlesTagsWrapper {
+    width: 80%;
+  }
+}
+.authorInfoWrapper .titlesTagsWrapper .titlesWrapper h1 {
+  color: #ff6060;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+@media (min-width: 768px) {
+  .authorInfoWrapper .titlesTagsWrapper .titlesWrapper h1 {
+    font-size: 36px;
+  }
+}
+.authorInfoWrapper .titlesTagsWrapper .titlesWrapper h2 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .authorInfoWrapper .titlesTagsWrapper .titlesWrapper h2 {
+    font-size: 18px;
+  }
+}
+.authorInfoWrapper .titlesTagsWrapper .tagsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.authorInfoWrapper .ratingAuthorWrapper {
+  margin-bottom: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .authorInfoWrapper .ratingAuthorWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    justify-content: center;
+    width: 20%;
+    margin-bottom: 5px;
+    gap: 20px;
+  }
+}
+
+.collapsesWrapper {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .collapsesWrapper {
+    display: flex;
+    gap: 6%;
+  }
+}
+.collapsesWrapper ul {
+  padding-left: 0;
+}
+.collapsesWrapper li {
+  list-style: none;
+}
+.collapsesWrapper .collapses {
+  width: 100%;
+}
+
 .errorWrapper {
   display: flex;
   flex-direction: column;
@@ -145,6 +229,37 @@ body {
   text-decoration: underline;
   text-decoration-thickness: 1.5px;
   text-underline-offset: 2px;
+}
+
+.authorWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.authorWrapper__title {
+  color: #ff6060;
+  font-size: 12px;
+  font-weight: 500;
+  width: auto;
+  max-width: 90px;
+  text-align: right;
+}
+@media (min-width: 768px) {
+  .authorWrapper__title {
+    font-size: 18px;
+  }
+}
+.authorWrapper__picture {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+@media (min-width: 768px) {
+  .authorWrapper__picture {
+    width: 64px;
+    height: 64px;
+  }
 }
 
 .bannerWrapper {
@@ -317,6 +432,45 @@ body {
 .collapseWrapper .animated {
   opacity: 1;
   transition: height 0.3s ease-in-out, opacity 0.3s 0.3s ease-in-out;
+}
+
+.ratingWrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+@media (min-width: 768px) {
+  .ratingWrapper {
+    gap: 10px;
+  }
+}
+.ratingWrapper .emptyStar, .ratingWrapper .fullStar {
+  width: 18px;
+  height: 18px;
+}
+@media (min-width: 768px) {
+  .ratingWrapper .emptyStar, .ratingWrapper .fullStar {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.tagWrapper {
+  font-size: 10px;
+  font-weight: 500;
+  background: #ff6060;
+  color: #FFFFFF;
+  margin-top: 2%;
+  height: 18px;
+  border-radius: 5px;
+  padding: 3px 10px 0 10px;
+}
+@media (min-width: 768px) {
+  .tagWrapper {
+    height: 25px;
+    font-size: 14px;
+    font-weight: 700;
+  }
 }
 
 .footerWrapper {

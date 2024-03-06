@@ -1,0 +1,89 @@
+.authorInfoWrapper {
+
+    width: 100%;
+    margin-top: 15px;
+
+    @media (min-width: $breakpoint) {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+    }
+
+    .titlesTagsWrapper {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: $breakpoint) {
+            width: 80%;
+        }
+
+        .titlesWrapper {
+            h1 {
+                color: $primary-color;
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 5px;
+
+                @media (min-width: $breakpoint) {
+                    font-size: 36px;
+                }
+            }
+
+            h2 {
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 10px;
+
+                @media (min-width: $breakpoint) {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .tagsWrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 16px;   
+        }
+    }
+
+    .ratingAuthorWrapper {
+        margin-bottom: 13px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @media (min-width: $breakpoint) {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-end;
+            justify-content: center;
+            width: 20%;
+            margin-bottom: 5px;
+            gap: 20px;
+        }
+    }
+}
+
+.collapsesWrapper {
+    width: 100%;
+
+    @media (min-width: $breakpoint) {
+        display: flex;
+        gap : 6%;
+    }
+    
+    ul {
+        padding-left: 0;
+    }
+    
+    li {
+        list-style: none;
+    }
+
+    .collapses {
+        width: 100%;
+    }
+    
+}
