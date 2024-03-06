@@ -3,10 +3,6 @@
     align-items: center;
     gap: 10px;
 
-    @media (min-width: $breakpoint) {
-        margin-bottom: 21px;
-    }
-
     &__title {
         color: $primary-color;
         font-size: 12px;
