@@ -2,7 +2,9 @@ import Error404 from "../../components/ErrorComponent"
 
 function Error() {
     return (
-        <Error404 />
+        <div className="contentWrapper">
+            <Error404 />
+        </div>
     )
 }
 
