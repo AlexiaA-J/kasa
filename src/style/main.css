@@ -16,7 +16,7 @@ body {
   align-items: center;
   margin: 0 22px;
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .contentWrapper {
     margin: 0 100px;
   }
@@ -44,10 +44,16 @@ body {
   }
 }
 
+.about-collapses {
+  margin: 30px 0;
+}
 @media (min-width: 768px) {
   .about-collapses {
     margin: 16px 0 8px 0;
   }
+}
+.about-collapses .collapseWrapper {
+  margin-bottom: 30px !important;
 }
 
 .authorInfoWrapper {
@@ -423,7 +429,7 @@ body {
     font-size: 18px;
   }
 }
-.collapseWrapper__toggle p {
+.collapseWrapper__toggle .toggleContent {
   margin: 0;
   padding: 22px 20px;
   pointer-events: none;
@@ -452,6 +458,80 @@ body {
   .ratingWrapper .emptyStar, .ratingWrapper .fullStar {
     width: 25px;
     height: 25px;
+  }
+}
+
+.slideshowWrapper {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 255px;
+  margin: 2% 0;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .slideshowWrapper {
+    height: 415px;
+  }
+}
+.slideshowWrapper .arrowsWrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 100;
+}
+.slideshowWrapper .arrowsWrapper .arrowLeft {
+  position: absolute;
+  left: 0;
+  top: 45%;
+}
+@media (min-width: 768px) {
+  .slideshowWrapper .arrowsWrapper .arrowLeft {
+    width: 46px;
+    height: 79px;
+  }
+}
+.slideshowWrapper .arrowsWrapper .arrowRight {
+  position: absolute;
+  right: 0;
+  top: 45%;
+}
+@media (min-width: 768px) {
+  .slideshowWrapper .arrowsWrapper .arrowLeft, .slideshowWrapper .arrowsWrapper .arrowRight {
+    width: 46px;
+    height: 79px;
+    top: 40%;
+  }
+}
+.slideshowWrapper .slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+}
+.slideshowWrapper .slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.slideshowWrapper .slide__number {
+  display: none;
+}
+@media (min-width: 768px) {
+  .slideshowWrapper .slide__number {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 49%;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    z-index: 200;
   }
 }
 

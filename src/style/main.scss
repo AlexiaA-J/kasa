@@ -1,6 +1,7 @@
+@import './Utils/_variables';
+
 @import './Base/_base';
 
-@import './Utils/_variables';
 
 @import '../pages/Home/_home';
 @import '../pages/About/_about';
@@ -14,5 +15,6 @@
 @import '../components/Card/_card';
 @import '../components/Collapse/_collapse';
 @import '../components/Rating/_rating';
+@import '../components/Slideshow/_slideshow';
 @import '../components/Tag/_tag';
 @import '../components/Footer/_footer';
