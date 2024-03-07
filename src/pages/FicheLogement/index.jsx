@@ -3,7 +3,8 @@ import Collapse from '../../components/Collapse'
 import Tag from '../../components/Tag'
 import Rating from '../../components/Rating'
 import Author from '../../components/Author'
-import { useState, useEffect } from 'react'
+import Slideshow from '../../components/Slideshow'
+import { useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 
 function FicheLogement() {
@@ -20,7 +21,7 @@ function FicheLogement() {
 
     return (
         logementData && <div className="contentWrapper">
-            {/* SLIDESHOW ?? */}
+            <Slideshow slides={logementData.pictures} />
             <div className='authorInfoWrapper'>
                 <div className='titlesTagsWrapper'>
                     <div className='titlesWrapper'>
@@ -32,8 +33,9 @@ function FicheLogement() {
                         </h2>
                     </div>
                     <div className='tagsWrapper'>
-                        {logementData.tags.map((tag)=> (
+                        {logementData.tags.map((tag, index)=> (
                             <Tag
+                            key={index}
                             tag={tag}
                             />
                         ))}
