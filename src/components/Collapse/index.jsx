@@ -28,9 +28,9 @@ function Collapse({title, text}) {
             <div className={toggle ? 'collapseWrapper__toggle animated' : 'collapseWrapper__toggle'}
             style={{height: toggle ? `${heightEl}` : '0px'}}
             ref={refHeight}>
-                <p aria-hidden={toggle ? 'true' : 'false'}>
+                <div className='toggleContent' aria-hidden={toggle ? 'true' : 'false'}>
                     {text}
-                </p>
+                </div>
             </div>
         </div>
     )
@@ -38,7 +38,10 @@ function Collapse({title, text}) {
 
 Collapse.propTypes = {
     title: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
+    text: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.object
+      ]).isRequired
 }
 
 export default Collapse
